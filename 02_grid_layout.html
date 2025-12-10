@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respomisve Navbar Using Grid</title>
+    <style>
+        html, *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        #navBar{
+            margin: 5px;
+            padding: 10px;
+            display: flex; 
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        a img {
+            width: 50px;
+            /* height: 40px; */
+        }
+        #nav_links{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        #nav_links a{
+            text-decoration:  none;
+            color: black;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        #button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn{
+            padding: 10px;
+            color: white;
+            font-weight: 600;
+            background-color: blue;
+            border: 2px solid;
+            border-radius: 10px;
+        
+            /* margin: 2px; */
+        }
+
+        @media screen and (max-width: 720px) {
+            
+        }
+    </style>
+</head>
+<body>
+    <nav id="navBar">
+        <div id="logo">
+            <a href="#">
+                <img src="logo.jpg" alt="">
+            </a>
+            <span>MyCompany</span>
+        </div>
+
+
+        <div id="nav_links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Categories</a>
+            <a href="#">Details</a>
+            <a href="#">Contact</a>
+        </div>
+
+
+        <div id="button">
+            <button class="btn">
+                Explore More
+            </button>
+            <button  class="btn">
+                Shop now
+            </button>
+        </div>
+    </nav>
+</body>
+</html>
